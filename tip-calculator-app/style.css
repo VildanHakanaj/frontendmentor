@@ -244,6 +244,73 @@ input:focus, input:active{
     letter-spacing: 15px;
 }
 
+@media screen and (max-width: 927px) {
+
+    .card{
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+
+
+    .tip{
+        cursor: pointer;
+        height: 48px;
+        flex-grow: 1;
+        width: 50%;
+        border: none;
+        color: var(--clr-white);
+        background-color: var(--clr-dark-cyan);
+        border-radius: 5px;
+        max-width: 146px;
+        font-size: 24px;
+        font-family: var(--ff);
+        margin-bottom: 1rem;
+        transition: .3s ease-in-out;
+    }
+
+    #num_people{
+        margin-bottom: 32px;
+    }
+
+}
+
+
+@media screen and (max-width: 380px) {
+
+    .card{
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+
+
+    .tip{
+        cursor: pointer;
+        height: 48px;
+        flex-grow: 1;
+        width: 50%;
+        border: none;
+        color: var(--clr-white);
+        background-color: var(--clr-dark-cyan);
+        border-radius: 5px;
+        max-width: 146px;
+        font-size: 24px;
+        font-family: var(--ff);
+        margin-bottom: 1rem;
+        transition: .3s ease-in-out;
+    }
+
+    #num_people{
+        margin-bottom: 32px;
+    }
+
+    .card-left{
+        padding: 0;
+    }
+
+}
+
 
 
 
