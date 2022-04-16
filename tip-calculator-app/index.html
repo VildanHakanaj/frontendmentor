@@ -1,44 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+<div class="wrapper">
+    <div class="container">
+        <h1 class="logo">
+            SPLI<br>TTER
+        </h1>
+        <div class="card">
+            <div class="card-section card-left">
+                <div class="input-group mb-40">
+                    <label class="input-group__label" for="total_amount">
+                        Bill
+                    </label>
+                    <input type="number" id="total_amount" value="142.55" class="input-group__input">
+                </div>
 
-  Bill
+                <div class="card__tips mb-40">
+                    <label class="input-group__label" for="tip">Select Tip %</label>
+                    <div class="card__tips__options" id="tip">
+                        <button class="tip" data-tip="5">5%</button>
+                        <button class="tip" data-tip="10">10%</button>
+                        <button class="tip" data-tip="15">15%</button>
+                        <button class="tip" data-tip="25">25%</button>
+                        <button class="tip" data-tip="50">50%</button>
+                        <input class="tip custom-input" placeholder="Custom" type="number">
+                    </div>
+                </div>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+                <div class="input-group">
+                    <div class="label-error">
+                        <label class="input-group__label" for="num_people">
+                            Number of people
+                        </label>
+                        <p class="error hidden" id="error_message">Can't be zero</p>
+                    </div>
+                    <input type="number" id="num_people" class="input-group__input" placeholder="0">
+                </div>
 
-  Number of People
+            </div>
+            <div class="card-section card-right">
+                <div class="top-right">
+                    <div class="results">
+                        <div>
+                            <p class="heading">Tip Amount</p>
+                            <p class="subheading">/ person</p>
+                        </div>
+                        <div class="amount_result">
+                            $4.27
+                        </div>
+                    </div>
 
-  Tip Amount
-  / person
+                    <div class="results">
+                        <div>
+                            <p class="heading">Total</p>
+                            <p class="subheading">/ person</p>
+                        </div>
+                        <div class="amount_result">
+                            $32.79
+                        </div>
+                    </div>
+                </div>
 
-  Total
-  / person
+                <div class="button-reset">
+                    <button>Reset</button>
+                </div>
 
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
