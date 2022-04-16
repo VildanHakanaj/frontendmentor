@@ -86,13 +86,13 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.card__body--heading {
+.card__body--heading, .thank__you h2 {
   font-size: 28px;
   margin-bottom: 1rem;
   font-weight: 700;
 }
 
-.card__body--text {
+.card__body--text, .thank__you p {
   color: var(--medium-grey);
   line-height: 24px;
   font-size: 15px;
@@ -134,7 +134,7 @@ body {
 
 .selected {
   color: var(--white);
-  background-color: var(--light-grey);
+  background-color: var(--medium-grey);
 }
 
 .card__footer--button {
@@ -158,6 +158,29 @@ body {
   background-color: var(--white);
   color: var(--orange);
 }
+
+
+.thank__you{
+  text-align: center;
+}
+
+.thank__you img{
+  margin-bottom: 2rem;
+  margin-top: 12px;
+}
+
+p.out-of{
+  width: 12.062rem;
+  height: 2rem;
+  border-radius: 1rem;
+  line-height: 2rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  color: var(--orange);
+  background-color: var(--dark-blue);
+}
+
+
 
 @media screen and (max-width: 461px){
   
