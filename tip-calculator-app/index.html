@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
 
 </head>
 <body>
@@ -28,7 +29,7 @@
                     <label class="input-group__label" for="total_amount">
                         Bill
                     </label>
-                    <input type="number" id="total_amount" value="142.55" class="input-group__input">
+                    <input type="number" id="total_amount" value="" placeholder="0" class="input-group__input">
                 </div>
 
                 <div class="card__tips mb-40">
@@ -61,8 +62,8 @@
                             <p class="heading">Tip Amount</p>
                             <p class="subheading">/ person</p>
                         </div>
-                        <div class="amount_result">
-                            $4.27
+                        <div class="amount_result" id="tip_per_person">
+                            $0
                         </div>
                     </div>
 
@@ -71,14 +72,14 @@
                             <p class="heading">Total</p>
                             <p class="subheading">/ person</p>
                         </div>
-                        <div class="amount_result">
-                            $32.79
+                        <div class="amount_result" id="total_per_person">
+                            $0
                         </div>
                     </div>
                 </div>
 
                 <div class="button-reset">
-                    <button>Reset</button>
+                    <button id="reset">Reset</button>
                 </div>
 
             </div>
